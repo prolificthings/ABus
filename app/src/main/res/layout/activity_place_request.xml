@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".PlaceRequestActivity">
+
+    <ImageView
+        android:id="@+id/OrderItemImg"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/apple" />
+
+    <TextView
+        android:id="@+id/OrderItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/OrderItemImg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/autour_one"
+        android:text="Item name"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/OrderItemState"
+        android:layout_below="@id/OrderItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        app:hintText="Select State">
+
+    </com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+
+    <EditText
+        android:id="@+id/OrderItemDistrict"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_below="@+id/OrderItemState"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:inputType="textPersonName"
+        android:hint="Enter Place(district/village/area)"
+        android:layout_marginStart="50dp" />
+
+    <EditText
+        android:id="@+id/OrderItemQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/OrderItemDistrict"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:inputType="textPersonName"
+        android:hint="Enter Quantity"
+        android:layout_marginStart="50dp" />
+
+    <EditText
+        android:id="@+id/OrderItemContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:layout_below="@+id/OrderItemQuantity"
+        android:hint="Contact number" />
+
+    <Button
+        android:id="@+id/placeOrderBtn"
+        android:layout_below="@id/OrderItemContact"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/place_order_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

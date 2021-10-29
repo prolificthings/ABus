@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Obus" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#0288d1</item>
+        <item name="colorPrimaryDark">#112253</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorAccent">#83b9ff</item>
+        <item name="android:windowAnimationStyle">@style/dialog_animation</item>
+        <!-- Secondary brand color. -->
+    </style>
+
+    <style name="dialog_animation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="FloatingHintStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+</resources>

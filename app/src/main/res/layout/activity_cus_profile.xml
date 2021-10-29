@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CusProfileActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary">
+
+        <androidx.appcompat.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/closePro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/close"
+                android:layout_alignParentLeft="true"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/savePro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                app:tint="@color/white"
+                app:srcCompat="@drawable/save_edited_info" />
+        </RelativeLayout>
+</androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/pro_img"
+        android:layout_below="@+id/appBar"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        app:civ_border_width="5dp"
+        app:civ_border_color="#3F51B5"/>
+
+    <TextView
+        android:id="@+id/chngImgTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textSize="22sp"
+        android:text="Update Image"
+        android:textColor="@color/primary"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_below="@+id/chngImgTxt">
+
+
+        <CheckBox
+            android:id="@+id/buyerCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:textSize="24sp"
+            android:text="Buyer" />
+
+        <CheckBox
+            android:id="@+id/sellerCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/buyerCheck"
+            android:textSize="24sp"
+            android:text="Seller" />
+
+        <TextView
+            android:id="@+id/stsTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buyerCheck"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/andika"
+            android:text=""
+            android:textColor="#F44336"
+            android:textSize="22sp" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/float1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stsTxt"
+            android:layout_marginTop="10dp"
+            app:hintTextAppearance="@style/FloatingHintStyle">
+
+            <EditText
+                android:id="@+id/namePro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arbutus_slab"
+                android:hint="  Name"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/float2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/float1"
+            android:layout_marginTop="10dp"
+            app:hintTextAppearance="@style/FloatingHintStyle">
+
+            <EditText
+                android:id="@+id/phonePro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arbutus_slab"
+                android:hint="  Phone"
+                android:inputType="phone"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/float3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/float2"
+            android:layout_marginTop="10dp"
+            app:hintTextAppearance="@style/FloatingHintStyle">
+
+            <EditText
+                android:id="@+id/professionPro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arbutus_slab"
+                android:hint="  Profession"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

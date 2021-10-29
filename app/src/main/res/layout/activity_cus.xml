@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CusActivity">
+
+    <fragment
+        android:id="@+id/cus_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bookRideBtn"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_from"
+        android:queryHint="Pickup Location"
+        android:iconifiedByDefault="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:elevation="5dp"
+        android:background="@drawable/bg_round"/>
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_to"
+        android:layout_below="@id/search_from"
+        android:queryHint="Destination"
+        android:iconifiedByDefault="false"
+       android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:elevation="5dp"
+        android:background="@drawable/bg_round"/>
+
+    <Button
+        android:id="@+id/bookRideBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navigation"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#2196F3"
+        android:fontFamily="@font/amaranth_bold"
+        android:text="Book a ride"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cusCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="5dp"
+        android:visibility="gone"
+        android:layout_above="@+id/bookRideBtn">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/driver2cus_img"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:src="@drawable/pro_img" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/driver2cus_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/belleza"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="3dp"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/driver2cus_phne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/belleza"
+                    android:layout_marginBottom="3dp"
+                    android:textSize="18sp"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/driver2cus_bus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/belleza"
+                    android:textSize="16sp"
+                    android:text="TextView" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/call_img"
+                android:layout_width="20dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:src="@drawable/call"
+                app:tint="#009688" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/navigation"
+        app:itemBackground="@color/nav_color"
+        app:itemTextColor="@drawable/nav_selector"
+        app:itemIconTint="@drawable/nav_selector"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu_buttom"/>
+
+</RelativeLayout>

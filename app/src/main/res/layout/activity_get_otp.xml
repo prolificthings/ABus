@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_rect"
+    tools:context=".getOtpActivity">
+
+
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/ccp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:visibility="invisible">
+
+    </com.hbb20.CountryCodePicker>
+
+    <ImageView
+        android:id="@+id/pc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/bg_pc1" />
+
+    <ImageView
+        android:id="@+id/pc3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/bg_pc3" />
+
+    <TextView
+        android:id="@+id/abus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="160dp"
+        android:fontFamily="@font/berkshire_swash"
+        android:text="अBus"
+        android:textColor="#2AA4F5"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/abus"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/arbutus_slab"
+        android:text="User Login"
+        android:textColor="#0E117A"
+        android:textStyle="bold"
+        android:textSize="26sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/float1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/log"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/black"
+        android:textColorHint="#AAA5A5"
+        app:boxBackgroundColor="#E91E63">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phneTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:hint="Enter Phone number"
+
+            android:inputType="phone" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/sOtpBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/float1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_otp"
+         />
+</RelativeLayout>

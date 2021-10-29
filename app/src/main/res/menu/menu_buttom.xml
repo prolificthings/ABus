@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Home"
+          android:id="@+id/home"
+        android:icon="@drawable/home"/>
+
+    <item android:title="Send Request"
+        android:id="@+id/send_req"
+        android:icon="@drawable/req_send"/>
+
+    <item android:title="Accept Request"
+        android:id="@+id/acc_req"
+        android:icon="@drawable/req_acpt"/>
+
+
+
+</menu>

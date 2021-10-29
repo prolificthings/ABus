@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "200974230220",
+    "project_id": "obus-37ca0",
+    "storage_bucket": "obus-37ca0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200974230220:android:8cf6b55afe1fd800d5d869",
+        "android_client_info": {
+          "package_name": "com.example.obus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "200974230220-s9or3bl5t17j0bimval6726u0cdt4oi7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3bqIbUVRQeh952QDVlmrzf3U324QZzG0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "200974230220-s9or3bl5t17j0bimval6726u0cdt4oi7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

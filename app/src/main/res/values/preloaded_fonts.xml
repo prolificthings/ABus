@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/amaranth_bold</item>
+        <item>@font/andika</item>
+        <item>@font/antic</item>
+        <item>@font/arbutus</item>
+        <item>@font/arbutus_slab</item>
+        <item>@font/aref_ruqaa_bold</item>
+        <item>@font/autour_one</item>
+        <item>@font/belleza</item>
+        <item>@font/berkshire_swash</item>
+    </array>
+</resources>
